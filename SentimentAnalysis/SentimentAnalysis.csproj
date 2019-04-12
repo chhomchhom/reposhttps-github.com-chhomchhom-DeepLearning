@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\netcoreapp2.1\SentimentAnalysis.AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\netcoreapp2.1\Data\yelp_labelled.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\netcoreapp2.1\SentimentAnalysis.deps.json" />
+    <Content Include="bin\Debug\netcoreapp2.1\SentimentAnalysis.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\netcoreapp2.1\SentimentAnalysis.runtimeconfig.json" />
+    <Content Include="obj\project.assets.json" />
+    <Content Include="obj\SentimentAnalysis.csproj.nuget.dgspec.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="obj\Debug\netcoreapp2.1\SentimentAnalysis.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\SentimentAnalysis.assets.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\SentimentAnalysis.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\SentimentAnalysis.csprojAssemblyReference.cache" />
+    <None Include="obj\SentimentAnalysis.csproj.nuget.cache" />
+    <None Include="obj\SentimentAnalysis.csproj.nuget.g.props" />
+    <None Include="obj\SentimentAnalysis.csproj.nuget.g.targets" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ML" Version="0.11.0" />
+  </ItemGroup>
+
+</Project>
